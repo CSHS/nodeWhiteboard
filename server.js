@@ -34,15 +34,13 @@ server.listen(app.get('port'), 'localhost',function() {
 });
 
 io.on("connection", function (socket) {
-
 	socket.on('createRoom', function(id) {
 		socket.join(id);
 	});
 	
-	socket.on("draw", function(mouseX,mouseY,mouseX2,mouseY2,id) {
+	socket.on("draw", function(mouseX,mouseY,mouseX2,mouseY2,rain,id) {
 		console.log("IT WORKS");
-		io.sockets.in(id).emit("draw",mouseX,mouseY,mouseX2,mouseY2); //this is the key equivalent for drawing.
-
+		io.sockets.in(id).emit("draw",mouseX,mouseY,mouseX2,mouseY2,rain); //this is the key equivalent for drawing.
 	});
 
 });

@@ -1,0 +1,40 @@
+/*responsive css for canvas and colors*/
+ @media screen and (min-width:15em) {
+ 	#colors{
+  		float:left;
+  		display: inline-flex;
+  		margin-left: 18%;
+	}
+ }
+
+@media screen and (min-width: 35.5em) {
+	#colors{
+  		float:left;
+  		display: inline-flex;
+  		margin-left: 15%;
+	}
+}
+
+@media screen and (min-width: 45em) {
+    #colors{
+  		float:left;
+  		display: inline-flex;
+  		margin-left: 10%;
+	}
+}
+
+@media screen and (min-width: 62em) {
+    #colors{
+  		float:left;
+  		display: inline-flex;
+  		margin-left: 32%;
+	}
+}
+
+@media screen and (min-width: 75em) {
+	#colors{
+		float:left;
+  		display: inline-flex;
+  		margin-left: 32%;
+	}
+}

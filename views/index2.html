@@ -3,22 +3,10 @@
 <head>
   <title>The Whiteboard</title>
   <link rel="stylesheet" type="text/css" href="components/bootstrap.min.css">
-  <!--<link rel="stylesheet" href="components/font-awesome/css/font-awesome.css">-->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <div class="main col-md-6 col-md-offset-3">
-    <!--<div class="alert alert-danger" id="errors"></div>
-    <div id="login-screen">
-      <p class="lead">Chat application - using node.js and socket.io</p>
-      <p>Please enter your name below and click 'Join' or hit the 'Enter' key.</p>
-        <form class="form-inline" id="nameForm">
-          <div class="form-group">
-            <input type="text" class="form-control input-lg" placeholder="Your name" id="name">
-          </div>
-          <input type="submit" name="join" id="join" value="Join" class="btn btn-primary btn-lg">
-        </form>
-      </div>
-    </div>-->
 
     <div class="row" id="main-chat-screen">
       <div id='canvas'>
@@ -26,6 +14,46 @@
       </div>
     </div>
   </div>
+
+  <div id='colors'>
+    <div class='color' style='width:50px;height:50px;background-color:red'></div>
+    <div class="color" style="width:50px; height:50px;background-color:orange"></div>
+    <div class='color' style='width:50px;height:50px;background-color:yellow'></div>
+    <div class='color' style='width:50px;height:50px;background-color:green'></div>
+    <div class='color' style='width:50px;height:50px;background-color:blue'></div>
+    <div class='color' style='width:50px;height:50px;background-color:indigo'></div>
+    <div class='color' style='width:50px;height:50px;background-color:violet'></div>
+    <div class='color' style='width:50px;height:50px;background-color:black'></div>
+  </div>
+
+  <!-- <div id='colors' style="width:300px; height:100px">
+      <table>
+        <tr>
+          <td><div id='red' class='color' style='width:50px;height:50px;background-color:red'></div>
+          </td>
+          <td><div id='orange' class='color' style='width:50px;height:50px;background-color:orange'></div>
+          </td>
+        </tr>
+        <tr>
+          <td><div id='yellow' class='color' style='width:50px;height:50px;background-color:yellow'></div>
+          </td>
+          <td><div id='green' class='color' style='width:50px;height:50px;background-color:green'></div>
+          </td>
+        </tr>
+        <tr>
+          <td><div id='blue' class='color'  style='width:50px;height:50px;background-color:blue'></div>
+          </td>
+          <td><div id='indigo' class='color' style='width:50px;height:50px;background-color:indigo'></div>
+          </td>
+        </tr>
+        <tr>
+          <td><div id='violet' class='color' style='width:50px;height:50px;background-color:violet'></div>
+          </td>
+          <td><div id='black' class='color' style='width:50px;height:50px;background-color:black'></div>
+          </td>
+        </tr>
+      </table>
+    </div>-->
 
   <script src="components/jquery-1.10.2.js"></script>
   <script src="components/bootstrap.min.js"></script>

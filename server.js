@@ -9,7 +9,9 @@ app.configure(function() {
   	//app.set('ipaddr', process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1");
 	app.use(express.bodyParser());
 	app.use(express.methodOverride());
-	app.use(express.static(__dirname + '/public'));
+
+	//cache-control set for content
+	app.use(express.static(__dirname + '/public', {maxAge: 3600}));
 	app.use('/components', express.static(__dirname + '/components'));
 	app.use('/js', express.static(__dirname + '/js'));
 	app.use('/icons', express.static(__dirname + '/icons'));
